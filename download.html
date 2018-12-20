@@ -1,0 +1,57 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>抢红包游戏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href="img/layout.css" rel="stylesheet" type="text/css" />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+<style type="text/css">
+    *{margin:0; padding:0;}
+    img{max-width: 100%; height: auto;}
+    .test{height: 600px; max-width: 600px; font-size: 40px;}
+</style>
+<div class="wrap">
+
+    <header>
+        <h1 class="logo">抢红包游戏</h1>
+    </header>
+
+    <section class="book">
+
+        <img src="img/default.png" />
+
+        <div >
+
+            <a class="btn s1" href="#" onclick="downloadIos()">IOS App 下载</a>
+        </div>
+
+        <a class="btn s2" href="#" onclick="downloadAndroid()" style="display: none;">Android App 打开/下载</a>
+    </section>
+
+    <footer>Copyright 2018 中文在线 版权所有</footer>
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+    var url = "itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/Liuhaiyu0415/RedPacketGame/master/mainfest.plist"
+
+    function  downloadIos(){
+        window.location.href = url
+    }
+
+</script>
+</body>
+</html>
